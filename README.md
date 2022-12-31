@@ -1,6 +1,6 @@
-# Tanju yildiz
+# Trani
 
-Tanju yildiz için tasarlanmış web sitesi tasarımının HTML dönüşümü projesidir.
+Trani için tasarlanmış web sitesi tasarımının HTML dönüşümü projesidir.
 
 ## Kurulum Talimatları
 
@@ -42,7 +42,7 @@ Bu komut çalıştırıldıktan sonra, _Gulp.js_ otomatik tüm çıktıyı oluş
 
 ## Demo
 
-Projenin demo halini [Tanjuyildiz.vercel.app](https://Tanjuyildiz.vercel.app) adresinden görüntüleyebilirsiniz.
+Projenin demo halini [trani.vercel.app](https://trani.vercel.app) adresinden görüntüleyebilirsiniz.
 
 ## Hata ve Yeni Özellik İstekleri
 
