@@ -1,0 +1,53 @@
+:root {
+  --primary: #{$primary};
+  --primary-dark: #{$primary-dark};
+  --primary-light: #{$primary-light};
+  --light: #{$light};
+  --dark: #{$dark};
+  --bg-color: #0f0e17;
+
+  /*base-style*/
+  --headings-color: var(--light);
+  --heading-color: var(--light);
+  --typography-color: #a7a9be;
+
+  /*button-style*/
+  --button-background-color: var(--primary-dark);
+  --button-color: var(--light);
+  --button-hover-color: #{$gray-300};
+
+  /*form-style*/
+  --form-focus-shadow: var(--primary);
+  --form-input-background-color: var(--light);
+  --form-input-color: var(--dark);
+  --form-input-border-color: var(--light);
+
+  /*index-style*/
+  --categorie-bottom-border-color: #{$gray-600};
+  --categorie-list-color: var(--light);
+  --social-media-color: var(--light);
+  --pagination-nav-color: var(--light);
+
+  /*gear-style*/
+  --table-heading-color: var(--light);
+  --table-text-color: var(--light);
+
+  /*specs-style*/
+  --specs-list-heading-color: var(--light);
+  --specs-list-text-color: var(--light);
+
+  /*footer*/
+  --footer-text-color: var(--light);
+  --footer-text-hover-color: #{$link-hover-color};
+  --footer-line-color: var(--light);
+
+  /*back to top style*/
+  --back-to-top-background-color: var(--dark);
+  --back-to-top-hover-background-color: var(--primary-dark);
+  --back-to-top-color: var(--light);
+
+  /*light dark mode style*/
+  --light-dark-mode-background-color: var(--dark);
+  --light-dark-mode-hover-background-color: var(--primary-dark);
+  --light-dark-mode-color: var(--light);
+}

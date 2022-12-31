@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// Abstracts
+@import "../vendor/bootstrap/scss/functions";
+@import "../vendor/bootstrap/scss/mixins";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// Packages
+@import "../vendor/bootstrap/scss/bootstrap";
+@import "../vendor/bootnavbar/scss/bootnavbar";
+@import "../vendor/font-awesome/scss/font-awesome";
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/modules/pagination/pagination";
+@import "../vendor/magnific-popup/scss/main";
+@import "../iconfont/output/scss/masir";
+
+// Base Styles
+@import "base/root";
+@import "base/base";
+@import "base/forms";
+@import "base/buttons";
+
+// Components
+@import "components/sprites";
+@import "components/breadcrumb";
+@import "components/pagination";
+@import "components/modals";
+@import "components/captcha";
+@import "components/section";
+@import "components/block";
+@import "components/back-to-top";
+
+// Partials
+@import "partials/header";
+@import "partials/footer";
+@import "partials/page-banner";
+@import "partials/sidebar";
+
+// Pages
+@import "pages/index";
+@import "pages/contact";
+@import "pages/categories";
+@import "pages/blog";
+@import "pages/blog-details";
+@import "pages/anime-details";
+@import "pages/anime-watching";
+@import "pages/login";
+@import "pages/signin";
+
+// Utilities
+@import "base/utilities";

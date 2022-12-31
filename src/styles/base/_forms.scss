@@ -1,0 +1,23 @@
+/* stylelint-disable selector-no-qualifying-type */
+
+// Forms
+.form-group {
+  margin-bottom: 1.25rem;
+}
+.form-control {
+  background-color: var(--form-input-background-color);
+  color: var(--form-input-color);
+  border-color: var(--form-input-border-color);
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgb(var(--form-focus-shadow) / 25%);
+}
+
+.login-signin-destop-line {
+  @include from($desktop) {
+    padding: 0;
+    width: 1px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}

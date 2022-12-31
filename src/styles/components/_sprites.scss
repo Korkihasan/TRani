@@ -1,0 +1,60 @@
+@use "sass:list";
+
+$grafix-name: 'grafix';
+$grafix-x: 0px;
+$grafix-y: 0px;
+$grafix-offset-x: 0px;
+$grafix-offset-y: 0px;
+$grafix-width: 66px;
+$grafix-height: 14px;
+$grafix-total-width: 66px;
+$grafix-total-height: 14px;
+$grafix-image: "../images/s.png";
+$grafix: (0px, 0px, 0px, 0px, 66px, 14px, 66px, 14px, "../images/s.png", "grafix");
+
+$spritesheet-width: 66px;
+$spritesheet-height: 14px;
+$spritesheet-image: "../images/s.png";
+$spritesheet-sprites: (
+  $grafix,
+);
+$spritesheet: (66px, 14px, "../images/s.png", $spritesheet-sprites);
+
+@mixin sprite-width($sprite) {
+  width: list.nth($sprite, 5);
+}
+@mixin sprite-height($sprite) {
+  height: list.nth($sprite, 6);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: list.nth($sprite, 3);
+  $sprite-offset-y: list.nth($sprite, 4);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite-image($sprite) {
+  $sprite-image: list.nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: list.nth($sprite, 10);
+    .s-#{$sprite-name} {
+      @include sprite-position($sprite);
+      @include sprite-height($sprite);
+      @include sprite-width($sprite);
+    }
+  }
+}
+
+.s {
+  background-image: url($spritesheet-image);
+  display: inline-block;
+}
+@include sprites($spritesheet-sprites);

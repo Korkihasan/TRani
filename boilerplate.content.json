@@ -1,0 +1,73 @@
+{
+  "site": {
+    "title": "Tanju yildiz",
+    "lang": "tr"
+  },
+  "meta": {
+    "title": "Tanju yildiz",
+    "description": "Tanju yildiz Tanıtım Web Sitesi.",
+    "keywords": ["tanju", "yildiz", "Tanju yildiz", "yildiz tanju"],
+    "themeColor": "#BA233C",
+    "favicon": {
+      "default": "images/favicon.png",
+      "appleTouchIcon": "images/favicon.png"
+    }
+  },
+  "contacts": {
+    "title": "Tanju yildiz",
+    "firm": "Tanju yildiz",
+    "callcenter": "444 1 565",
+    "address": "Fevzi Çakmak Mah. 10758 Sok. No: 4/N (B1) Karatay / KONYA / TURKEY",
+    "phone": "+90 532 444 1 565",
+    "wp": "905324441565",
+    "fax": "+90 532 444 1 565",
+    "email": "info@Tanjuyildiz.com",
+    "web": "www.Tanjuyildiz.com"
+  },
+  "featuredSlider": [
+    {
+      "id": "1",
+      "desc": "",
+      "badge": "Son Gün",
+      "title": "30 Eylül",
+      "image": "uploads/slider/slider.jpg"
+    },
+    {
+      "id": "2",
+      "desc": "",
+      "badge": "Son Gün",
+      "title": "31 Eylül",
+      "image": "uploads/slider/slider.jpg"
+    },
+    {
+      "id": "3",
+      "desc": "",
+      "badge": "Son Gün",
+      "title": "32 Eylül",
+      "image": "uploads/slider/slider.jpg"
+    },
+    {
+      "id": "4",
+      "desc": "",
+      "badge": "Son Gün",
+      "title": "33 Eylül",
+      "image": "uploads/slider/slider.jpg"
+    },
+    {
+      "id": "5",
+      "desc": "",
+      "badge": "Son Gün",
+      "title": "34 Eylül",
+      "image": "uploads/slider/slider.jpg"
+    },
+    {
+      "id": "6",
+      "desc": "",
+      "badge": "Son Gün",
+      "title": "35 Eylül",
+      "image": "uploads/slider/slider.jpg"
+    }
+  ],
+  "categories": [],
+  "urunler": []
+}

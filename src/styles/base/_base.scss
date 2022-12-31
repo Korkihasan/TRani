@@ -1,0 +1,18 @@
+html,
+body {
+  background-color: var(--bg-color);
+  color: var(--typography-color);
+}
+
+a {
+  transition: all 0.2s;
+}
+
+::selection {
+  color: $white;
+  background-color: $primary-dark;
+}
+
+.heading {
+  color: var(--heading-color);
+}

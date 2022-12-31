@@ -1,0 +1,38 @@
+// Butonlar
+.btn {
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  width: auto;
+}
+
+.btn:hover {
+  color: var(--button-hover-color);
+}
+
+.login-with {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: $light;
+  height: 47px;
+  width: 100%;
+  margin-bottom: 15px;
+  @include from($tablet) {
+    width: 500px;
+  }
+}
+
+.login-with i {
+  margin-right: 20px;
+}
+
+.login-facebook {
+  background-color: #4267b2;
+}
+.login-google {
+  background-color: #ff4343;
+}
+.login-twitter {
+  background-color: #1da1f2;
+}

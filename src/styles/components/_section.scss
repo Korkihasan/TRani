@@ -1,0 +1,30 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  padding-top: 3rem;
+  padding-bottom: 7.5rem;
+}
+
+.section-title {
+  font-size: 30px;
+  color: $secondary;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  button {
+    min-width: 327px;
+    min-height: 40px;
+  }
+}

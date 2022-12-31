@@ -1,0 +1,26 @@
+.login {
+  color: $light;
+  @include from($desktop) {
+    margin-top: 50px;
+  }
+}
+
+.login form {
+  width: 400px;
+  @include from($desktop) {
+    width: 100%;
+  }
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include from($desktop) {
+    display: block;
+  }
+}
+
+.register-button {
+  width: 220px;
+}

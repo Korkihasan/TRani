@@ -1,0 +1,137 @@
+// Bloklar
+
+// Base Styles
+.block {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-top: 0;
+  }
+  + .block {
+    margin-top: 1rem;
+  }
+  @include from($xlargescreen) {
+    + .block {
+      margin-top: 3rem;
+    }
+  }
+}
+
+// Wrapper
+.block-inner {
+  position: relative;
+  height: 100%;
+  transition: .25s ease-in-out;
+
+  [class*="block-"] {
+    position: relative;
+
+    + [class*="block-"] {
+      margin-top: 1.25rem;
+    }
+  }
+}
+
+// Header
+.block-header {
+  @include until($desktop) {
+    .row > [class*="col-"] + [class*="col-"] {
+      margin-top: .5rem;
+    }
+  }
+}
+
+// Title
+.block-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: $primary;
+  transition: .25s ease-in-out;
+
+  &.is-large {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .block-body & {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+  @include from($tablet) {
+    font-size: 1.5rem;
+  }
+  @include from($desktop) {
+    font-size: 1.75rem;
+
+    .block-body & {
+      font-size: 1.25rem;
+    }
+  }
+  @include from($widescreen) {
+    font-size: 1.875rem;
+
+    .block-body & {
+      font-size: 1.5rem;
+    }
+  }
+  @include from($xlargescreen) {
+    font-size: 2rem;
+
+    .block-body & {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.block-desc {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $secondary;
+}
+
+// Block: Link
+.block-link {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $body-color;
+
+  &:hover {
+    color: $primary;
+  }
+  .block-header & {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .block-footer & {
+    box-shadow: 0 1px 0 currentcolor;
+  }
+}
+
+// Object
+.block-object {
+  overflow: hidden;
+  text-align: center;
+  border-radius: .25rem;
+}
+
+// Image
+.block-image {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Body
+// .block-body {}
+
+// Footer
+.block-footer {
+  .pagination {
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
+  }
+}

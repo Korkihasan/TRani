@@ -1,0 +1,21 @@
+// Breadcrumb
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+.breadcrumb-item {
+  > a,
+  > a:hover,
+  > .active {
+    color: $white;
+  }
+  > a {
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  &.active {
+    text-transform: uppercase;
+  }
+}

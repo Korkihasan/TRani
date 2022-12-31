@@ -1,0 +1,17 @@
+// Modal
+
+/* stylelint-disable-next-line selector-no-qualifying-type */
+body.modal-open {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.modal-backdrop + .modal-backdrop {
+  opacity: 0;
+}
+
+.modal-search {
+  top: 10%;
+}
+
+// Arama Modalı

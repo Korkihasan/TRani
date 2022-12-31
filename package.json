@@ -1,0 +1,72 @@
+{
+  "name": "Tanjuyildiz",
+  "version": "0.0.2",
+  "description": "Tanju yildiz tanıtım Site ",
+  "author": "Tanju Yildiz <ben@tanjuyildiz.com>",
+  "license": "MIT",
+  "keywords": [
+    "gulp.js",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp",
+    "clean": "gulp clean",
+    "dev": "yarn clean && yarn start",
+    "icons": "fantasticon",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "sprites": "gulp sprites",
+    "archive": "yarn clean && yarn build && gulp archive",
+    "preversion": "yarn clean",
+    "version": "yarn build",
+    "postversion": "gulp archive && git push origin main && git push origin --tags main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafixcw/masirdoor.git"
+  },
+  "homepage": "https://github.com/grafixcw/masirdoor",
+  "bugs": {
+    "url": "https://github.com/grafixcw/masirdoor/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.10",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.14",
+    "del": "6.1.1",
+    "fantasticon": "^1.2.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-filter": "^7.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-wait": "^0.0.2",
+    "gulp-zip": "^5.1.0",
+    "gulp.spritesmith": "^6.13.0",
+    "postcss": "^8.4.19",
+    "prettier": "^2.7.1",
+    "sass": "^1.56.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-twbs-bootstrap": "^7.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "swiper": "8.4.4"
+  }
+}

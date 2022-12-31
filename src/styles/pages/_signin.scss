@@ -1,0 +1,22 @@
+.already-account-link {
+  color: $primary;
+}
+.already-account-link:hover {
+  color: $primary-light;
+}
+
+.signin-middler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include from($desktop) {
+    display: block;
+  }
+}
+
+.signin-middler-helper {
+  width: 400px;
+  @include from($desktop) {
+    width: 100%;
+  }
+}
