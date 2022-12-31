@@ -1,8 +1,8 @@
 {
-  "name": "Tanjuyildiz",
+  "name": "trani",
   "version": "0.0.2",
-  "description": "Tanju yildiz tanıtım Site ",
-  "author": "Tanju Yildiz <ben@tanjuyildiz.com>",
+  "description": "anime izleme sitesidir",
+  "author": "trani <ben@trani.com>",
   "license": "MIT",
   "keywords": [
     "gulp.js",

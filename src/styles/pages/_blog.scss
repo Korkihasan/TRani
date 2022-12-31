@@ -1,0 +1,39 @@
+.blog-foto1 {
+  background-image: url(/images/blog-foto-big.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.blog-foto2 {
+  background-image: url(/images/blog-foto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 285px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.blog-text p {
+  margin-bottom: 0px;
+}
+
+.blog-foto1 .blog-text {
+  width: 350px;
+  text-align: center;
+}
+
+.blog-foto2 .blog-text {
+  width: 250px;
+  text-align: center;
+}
