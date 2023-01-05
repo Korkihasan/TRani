@@ -1,0 +1,41 @@
+.blog-details p {
+  font-size: 15px;
+
+  @include from($desktop) {
+    font-size: 17px;
+  }
+}
+
+.blog-details img {
+  width: 100%;
+}
+
+.blog-details-content-box {
+  margin-bottom: 45px;
+}
+
+.blog-details-comment {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.blog-details-comment-pp {
+  width: 70px;
+  min-width: 70px;
+  margin-right: 20px;
+  @include from($desktop) {
+    margin-right: 30px;
+  }
+}
+
+.comment-reply {
+  margin-left: 30px;
+  @include from($desktop) {
+    margin-left: 120px;
+  }
+}
+
+.comment-btn {
+  padding: 4px 10px;
+  margin-right: 5px;
+}
