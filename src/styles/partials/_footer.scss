@@ -4,9 +4,9 @@
 }
 
 .footer-nav {
-  margin: 0px 3px;
+  padding: 0px 3px;
   @include from($tablet) {
-    margin: 0px 15px;
+    padding: 8px 16px;
   }
 }
 

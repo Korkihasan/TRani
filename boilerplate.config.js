@@ -27,7 +27,6 @@ module.exports = {
       "node_modules/swiper/swiper-bundle.min.js",
       "src/vendor/magnific-popup/js/jquery.magnific-popup.min.js",
       "src/scripts/backToTop.js",
-      "src/scripts/theme-switcher.js",
       "src/scripts/app.js",
     ],
     output: "dist/js",

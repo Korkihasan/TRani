@@ -10,8 +10,51 @@ body.modal-open {
   opacity: 0;
 }
 
-.modal-search {
-  top: 10%;
+// Arama Modalı
+
+.close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: $light;
+  top: 3%;
+  right: 5%;
+  cursor: pointer;
+  background: $primary;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  @include from($desktop) {
+    width: 50px;
+    height: 50px;
+    top: 5%;
+    right: 15%;
+    font-size: 35px;
+  }
 }
 
-// Arama Modalı
+.close-btn:hover {
+  color: $gray-400;
+}
+
+.modal-dialog {
+  padding-top: 40%;
+  @include from($desktop) {
+    padding-top: 10%;
+  }
+}
+
+.modal-content {
+  background-color: transparent;
+}
+
+.search-input {
+  border-radius: 12px 0px 0px 12px;
+}
+
+.btn-search {
+  border-radius: 0px 12px 12px 0px;
+}

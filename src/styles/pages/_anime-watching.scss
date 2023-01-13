@@ -1,4 +1,23 @@
-.anime-episode {
+.episode-swtich {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anime-video {
   width: 100%;
   background-color: black;
+}
+
+.episode-list-title {
+  padding: 5px 10px 0px 5px;
+}
+
+.episode-list {
+  padding: 5px 10px;
+}
+
+.episode-sidebar {
+  background-color: #1f1b34;
+  overflow: auto;
+  height: 472px;
 }
