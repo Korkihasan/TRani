@@ -165,7 +165,6 @@ var grafix = {
     this.initNavbar();
     this.initLightbox();
     // this.inputValChanger();
-    this.featuredSlider();
     this.bsModalBackdropFix();
     this.searchModal();
   },
