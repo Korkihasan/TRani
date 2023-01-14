@@ -2,18 +2,28 @@
 
 <div class="featured-section">
 	<div class="container">
+		<p class="my-5">
+			<i class="fa fa-home" aria-hidden="true"></i>
+			<a href="index.html">Home</a>
+			<a href="categories.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Categories</a>
+			<i class="fa fa-angle-right" aria-hidden="true"></i> Romance
+		</p>
 		<div class="row">
 			<div class="col-lg-8">
 				<div class="row">
-					<div class="col-12 d-flex justify-content-between align-items-center mb-3">
-						<div><h4>Recently Added Animes</h4></div>
-						<div>
-							<a href="categories.html">VIEW ALL <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
-						</div>
+					<div class="col-12 mb-3">
+						<div><h4>Romance</h4></div>
 					</div>
-					{% for i in range(1,15) %}
+					{% for i in range(1,18) %}
 					<div class="col-lg-4 col-md-6 mb-5">
-						<a href="anime-details.html"><div class="anime-pic"></div></a>
+						<a href="anime-details.html"
+							><div class="anime-pic">
+								<div class="anime-alerts">
+									<div class="number-of-episodes">17/?</div>
+									<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 9654</div>
+								</div>
+							</div></a
+						>
 						<div class="anime-text">
 							<div class="d-flex mb-3">
 								<div class="categori-alert">Active</div>
@@ -27,6 +37,23 @@
 
 					{% endfor %}
 				</div>
+				<div class="row">
+					<div class="col-12 pagination-navbar">
+						<div class="pagination-nav">
+							<a class="paginaton-pages paginaton-default" href="#">
+								<i class="fa fa-angle-double-left" aria-hidden="true"></i
+							></a>
+							<a class="paginaton-pages paginaton-curent-page" href="#">1</a>
+							<a class="paginaton-pages" href="#">2</a>
+							<a class="paginaton-pages" href="#">3</a>
+							<a class="paginaton-pages" href="#">4</a>
+							<a class="paginaton-pages" href="#">5</a>
+							<a class="paginaton-pages" href="#">
+								<i class="fa fa-angle-double-right" aria-hidden="true"></i
+							></a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="row">
@@ -36,12 +63,12 @@
 				</div>
 				<div class="row">
 					{% for i in range(1,6) %}
-					<div class="col-12 mb-3">
+					<div class="col-md-6 col-lg-12 mb-3">
 						<a href="#">
 							<div class="sidebar-news">
-								<div class="sidebar-anime-alerts">
-									<div>aaaa</div>
-									<div>bbbbb</div>
+								<div class="anime-alerts">
+									<div class="number-of-episodes">17/?</div>
+									<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 9654</div>
 								</div>
 								<div class="sidebar-news-text">
 									<h5>The Seven Deadly Sins: Wrath of the Gods</h5>
@@ -52,11 +79,28 @@
 					{% endfor %}
 				</div>
 				<div class="row">
-					<div class="col-12"><h5>daha yapılacak</h5></div>
-					<div class="col-12">a</div>
-					<div class="col-12">a</div>
-					<div class="col-12">a</div>
-					<div class="col-12">a</div>
+					<div class="col-12 mb-3"><h5>New Comment</h5></div>
+
+					{% for i in range(1,4) %}
+					<div class="col-12 mb-3">
+						<div class="sidebar-comment d-flex align-items-center">
+							<div class="sidebar-new-comment-foto">
+								<a href="#"><img src="/images/comment-4.jpg" /></a>
+							</div>
+
+							<div class="sidebar-comment-news-text">
+								<div class="d-flex mb-3">
+									<div class="categori-alert">Active</div>
+									<div class="categori-alert">Movie</div>
+								</div>
+								<a><h5>The Seven Deadly Sins: Wrath of the Gods</h5></a>
+								<div class="comment-viewes">
+									<i class="fa fa-eye" aria-hidden="true"></i> 19.141 Viewes
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</div>

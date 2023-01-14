@@ -31,7 +31,7 @@
   border-radius: 10px;
 }
 
-.sidebar-anime-alerts {
+.anime-alerts {
   display: flex;
   justify-content: space-between;
   padding: 5px 5px;
@@ -39,4 +39,30 @@
 
 .sidebar-news-text {
   padding: 0 30px 5px 20px;
+}
+
+.number-of-episodes {
+  background-color: $primary;
+  border-radius: 8px;
+  font-size: 13px;
+  width: fit-content;
+  padding: 0px 10px;
+  color: $light;
+}
+
+.views {
+  background-color: $gray-800;
+  border-radius: 8px;
+  font-size: 13px;
+  width: fit-content;
+  padding: 0px 10px;
+  color: $light;
+}
+
+.sidebar-comment-news-text {
+  margin-left: 10px;
+}
+
+.comment-viewes {
+  font-size: 13px;
 }
