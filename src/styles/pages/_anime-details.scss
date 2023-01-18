@@ -1,0 +1,110 @@
+.anime-detail-foto {
+  background-image: url(/images/details-pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 350px;
+}
+.anime-detail-title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include from($tablet) {
+    flex-direction: row;
+  }
+}
+
+.anime-detail-rating {
+  @include from($tablet) {
+    order: 2;
+  }
+}
+.anime-detail-header {
+  margin-bottom: 10px;
+  @include from($tablet) {
+    order: 1;
+    margin-bottom: 0px;
+  }
+}
+
+.anime-detail-text p {
+  font-size: 14px;
+  @include from($desktop) {
+    font-size: 18px;
+  }
+}
+
+.rating-stars {
+  color: #e89f12;
+  font-size: 24px;
+}
+
+.rating-stars:hover {
+  color: #c0850f;
+  font-size: 28px;
+}
+
+.anime-detail-rating {
+  margin-top: 20px;
+  @include from($tablet) {
+    height: 85px;
+    margin-top: 0px;
+  }
+}
+.description {
+  list-style-type: square;
+  padding-left: 0px;
+  margin: 0px;
+}
+.description li {
+  display: flex;
+}
+
+.description-element {
+  width: 100px;
+}
+.description-element-text {
+  color: white;
+  width: 230px;
+}
+
+.anime-details-comment-pp {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.anime-details-comment-heading {
+  display: block;
+  margin-bottom: 10px;
+  @include from($tablet) {
+    display: flex;
+  }
+}
+.anime-details-comment-heading p {
+  margin-bottom: 0px;
+}
+
+.anime-details-comment-box {
+  position: relative;
+  width: 100%;
+  border-radius: 7px;
+  background: #161628;
+  padding: 18px 30px 16px 20px;
+}
+
+.anime-details-comment-box::before {
+  content: "";
+  top: 15px;
+  left: -9px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #161628;
+  transform: rotate(45deg);
+}
+
+.anime-details-comment-name {
+  color: $light;
+  font-size: 17px;
+  margin-right: 10px;
+}

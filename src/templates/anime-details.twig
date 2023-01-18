@@ -1,5 +1,173 @@
 {% extends 'layouts/master.twig' %} {% set pageName = " index" %} {% set pageTitle = "anime-details" %} {% block content
 %}
 
-<div class="featured-section "></div>
+<div class="featured-section">
+	<div class="container">
+		<p class="my-5">
+			<i class="fa fa-home" aria-hidden="true"></i>
+			<a href="index.html">Home</a>
+			<a href="categories.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Categories</a>
+			<a href="categories-romance.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Romance</a>
+			<i class="fa fa-angle-right" aria-hidden="true"></i> Fate Stay Night: Unlimited Blade
+		</p>
+
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="anime-detail-foto">
+					<div class="anime-alerts">
+						<div class="number-of-episodes">17/?</div>
+						<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 9654</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<div class="anime-detail-text">
+					<div class="anime-detail-title">
+						<div class="anime-detail-rating">
+							<a class="rating-stars"><i class="fa fa-star" aria-hidden="true"></i></a>
+							<a class="rating-stars"><i class="fa fa-star" aria-hidden="true"></i></a>
+							<a class="rating-stars"><i class="fa fa-star" aria-hidden="true"></i></a>
+							<a class="rating-stars"><i class="fa fa-star" aria-hidden="true"></i></a>
+							<a class="rating-stars"><i class="fa fa-star-half-o" aria-hidden="true"></i></a>
+							<p>1.029 Votes</p>
+						</div>
+						<div class="anime-detail-header">
+							<h3>Fate Stay Night: Unlimited Blade</h3>
+							<span>フェイト／ステイナイト, Feito／sutei naito </span>
+						</div>
+					</div>
+					<p>
+						Every human inhabiting the world of Alcia is branded by a “Count” or a number written on their
+						body. For Hina’s mother, her total drops to 0 and she’s pulled into the Abyss, never to be seen
+						again. But her mother’s last words send Hina on a quest to find a legendary hero from the Waste
+						War - the fabled Ace!
+					</p>
+
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="description">
+								<li>
+									<span class="description-element">Type:</span>
+									<span class="description-element-text">TV Series</span>
+								</li>
+								<li>
+									<span class="description-element">Studios:</span>
+									<span class="description-element-text">Lerche</span>
+								</li>
+								<li>
+									<span class="description-element">Date aired:</span
+									><span class="description-element-text">02, 2019 to ?</span>
+								</li>
+								<li>
+									<span class="description-element">Status:</span>
+									<span class="description-element-text">Airing</span>
+								</li>
+								<li>
+									<span class="description-element">Genre:</span>
+									<span class="description-element-text">Action, Adventure, Fantasy, Magic </span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="description">
+								<li>
+									<span class="description-element">Scores:</span>
+									<span class="description-element-text">7.31 / 1,515</span>
+								</li>
+								<li>
+									<span class="description-element">Rating:</span>
+									<span class="description-element-text">8.5 / 161 times</span>
+								</li>
+								<li>
+									<span class="description-element">Duration:</span>
+									<span class="description-element-text">24 min/ep</span>
+								</li>
+								<li>
+									<span class="description-element">Quality:</span>
+									<span class="description-element-text">HD</span>
+								</li>
+								<li>
+									<span class="description-element">Views:</span>
+									<span class="description-element-text">131,541</span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-12 mt-4">
+							<button class="btn me-3"><i class="fa fa-heart-o" aria-hidden="true"></i> Follow</button
+							><a href="anime-watching.html"
+								><button class="btn">
+									Wachting Now <i class="fa fa-angle-right" aria-hidden="true"></i></button
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-8">
+				<h4 class="heading-with-border">REVIEWS</h4>
+				{% for i in range(1,5) %}
+				<div class="row my-4">
+					<div class="col-3 col-md-2">
+						<div class="d-flex justify-content-end">
+							<img class="anime-details-comment-pp" src="/images/comment.png" />
+						</div>
+					</div>
+					<div class="col-9 col-md-10">
+						<div class="anime-details-comment-box">
+							<div class="anime-details-comment-heading">
+								<p class="anime-details-comment-name">Hasan Korkmaz -</p>
+								<p class="anime-details-comment-date">5 Hour ago</p>
+							</div>
+							<div class="anime-details-comment-text">
+								<p>
+									whachikan Just noticed that someone categorized this as belonging to the genre
+									"demons" LOL
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+				<h4 class="heading-with-border">YOUR COMMENT</h4>
+				<div class="row">
+					<form>
+						<textarea
+							class="form-control my-4"
+							placeholder="Massage"
+							id="floatingTextarea"
+							rows="4"
+						></textarea>
+						<button class="btn"><i class="fa fa-paper-plane" aria-hidden="true"></i> REVIEW</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-4 mt-5 mt-lg-0">
+				<div class="row">
+					<div class="col-12 mb-3">
+						<h4 class="heading-with-border">YOU MIGHT LIKE...</h4>
+					</div>
+				</div>
+				<div class="row">
+					{% for i in range(1,4) %}
+					<div class="col-md-6 col-lg-12 mb-3">
+						<a href="#">
+							<div class="sidebar-news">
+								<div class="anime-alerts">
+									<div class="number-of-episodes">17/?</div>
+									<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 9654</div>
+								</div>
+								<div class="sidebar-news-text">
+									<h5>The Seven Deadly Sins: Wrath of the Gods</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 {% endblock %}

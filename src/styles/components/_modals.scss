@@ -54,6 +54,9 @@ body.modal-open {
 .search-input {
   border-radius: 12px 0px 0px 12px;
 }
+.search-input:focus {
+  border-color: white;
+}
 
 .btn-search {
   border-radius: 0px 12px 12px 0px;

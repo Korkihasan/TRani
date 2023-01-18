@@ -8,7 +8,7 @@ content %}
 				<i class="fa fa-home" aria-hidden="true"></i>
 				<a href="index.html">Home</a>
 				<a href="categories.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Categories</a>
-				<a href="categories.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Romance</a>
+				<a href="categories-romance.html"><i class="fa fa-angle-right" aria-hidden="true"></i> Romance</a>
 				<a href="anime-details.html"
 					><i class="fa fa-angle-right" aria-hidden="true"></i> Fate Stay Night: Unlimited Blade</a
 				>
@@ -51,6 +51,46 @@ content %}
 				</div>
 			</div>
 		</div>
+		<div class="row mt-5">
+			<div class="col-lg-8">
+				<h4 class="heading-with-border">REVIEWS</h4>
+				{% for i in range(1,5) %}
+				<div class="row my-4">
+					<div class="col-3 col-md-2">
+						<div class="d-flex justify-content-end">
+							<img class="anime-details-comment-pp" src="/images/comment.png" />
+						</div>
+					</div>
+					<div class="col-9 col-md-10">
+						<div class="anime-details-comment-box">
+							<div class="anime-details-comment-heading">
+								<p class="anime-details-comment-name">Hasan Korkmaz -</p>
+								<p class="anime-details-comment-date">5 Hour ago</p>
+							</div>
+							<div class="anime-details-comment-text">
+								<p>
+									whachikan Just noticed that someone categorized this as belonging to the genre
+									"demons" LOL
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+				<h4 class="heading-with-border">YOUR COMMENT</h4>
+				<div class="row">
+					<form>
+						<textarea
+							class="form-control my-4"
+							placeholder="Massage"
+							id="floatingTextarea"
+							rows="4"
+						></textarea>
+						<button class="btn"><i class="fa fa-paper-plane" aria-hidden="true"></i> REVIEW</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
+	{% endblock %}
 </div>
-{% endblock %}

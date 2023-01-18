@@ -36,3 +36,8 @@ a {
 .heading {
   color: var(--heading-color);
 }
+
+.heading-with-border {
+  border-left: 5px solid $primary;
+  padding-left: 10px;
+}
