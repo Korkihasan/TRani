@@ -3,18 +3,18 @@
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  height: 120px;
+  height: 100px;
   margin-bottom: 30px;
-  background-color: #1f1b34;
+  background-color: #161628;
   @include from($tablet) {
-    height: 200px;
+    height: 100px;
   }
 }
 
 .anime-title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   @include from($desktop) {
-    font-size: 42px;
+    font-size: 30px;
   }
 }

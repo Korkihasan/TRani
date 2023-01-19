@@ -1,0 +1,42 @@
+.seasonal-anime-tab {
+  display: -webkit-box;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: none;
+  @include from($desktop) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.seasonal-anime-tab .nav-link {
+  width: 130px;
+  color: $light;
+  border-radius: 0px;
+  border: none;
+}
+
+.seasonal-anime-tab .nav-link.active {
+  background-color: $primary;
+  border: $primary;
+  color: $light;
+  height: 42.2px;
+}
+
+.seasonal-anime-foto {
+  background-image: url(/images/recent-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 220px;
+  border-radius: 10px;
+}
+.seasonal-anime-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.seasonal-anime-rating {
+  color: #e89f12;
+}

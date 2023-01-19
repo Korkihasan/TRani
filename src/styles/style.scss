@@ -14,6 +14,8 @@
 @import "../../node_modules/swiper/modules/pagination/pagination";
 @import "../vendor/magnific-popup/scss/main";
 @import "../iconfont/output/scss/masir";
+@import "../vendor/slick/slick";
+@import "../vendor/slick/slick-theme";
 
 // Base Styles
 @import "base/root";
@@ -39,7 +41,7 @@
 
 // Pages
 @import "pages/index";
-@import "pages/contact";
+@import "pages/seasonal-anime";
 @import "pages/categories";
 @import "pages/categories-romance";
 @import "pages/blog";
