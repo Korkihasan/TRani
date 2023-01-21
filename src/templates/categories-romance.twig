@@ -60,24 +60,92 @@ content %}
 				<div class="row">
 					<div class="col-12 mb-3">
 						<h4 class="heading-with-border">Popular Series</h4>
+						<div class="mixitupbtn mt-4">
+							<label data-filter=".day">Day </label>
+							<label data-filter=".week">Week </label>
+							<label data-filter=".month">Month </label>
+							<label data-filter=".years">Years </label>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					{% for i in range(1,6) %}
-					<div class="col-md-6 col-lg-12 mb-3">
-						<a href="#">
-							<div class="sidebar-news">
-								<div class="anime-alerts">
-									<div class="number-of-episodes">17/?</div>
-									<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 9654</div>
-								</div>
-								<div class="sidebar-news-text">
-									<h5>The Seven Deadly Sins: Wrath of the Gods</h5>
-								</div>
+
+				<div class="mixup">
+					<div class="mix day" data-order="1">
+						{% for i in range(1,3) %}
+						<div class="row">
+							<div class="col-md-6 col-lg-12 mb-3">
+								<a href="#">
+									<div class="sidebar-news">
+										<div class="anime-alerts">
+											<div class="number-of-episodes">17/?</div>
+											<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 1254</div>
+										</div>
+										<div class="sidebar-news-text">
+											<h5>The Seven Deadly Sins: Wrath of the Gods</h5>
+										</div>
+									</div>
+								</a>
 							</div>
-						</a>
+						</div>
+						{% endfor %}
 					</div>
-					{% endfor %}
+					<div class="mix week" data-order="2">
+						{% for i in range(1,5) %}
+						<div class="row">
+							<div class="col-md-6 col-lg-12 mb-3">
+								<a href="#">
+									<div class="sidebar-news">
+										<div class="anime-alerts">
+											<div class="number-of-episodes">17/?</div>
+											<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 9356</div>
+										</div>
+										<div class="sidebar-news-text">
+											<h5>The Seven Deadly Sins: Wrath of the Gods</h5>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<div class="mix month" data-order="3">
+						{% for i in range(1,2) %}
+						<div class="row">
+							<div class="col-md-6 col-lg-12 mb-3">
+								<a href="#">
+									<div class="sidebar-news">
+										<div class="anime-alerts">
+											<div class="number-of-episodes">17/?</div>
+											<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 4758</div>
+										</div>
+										<div class="sidebar-news-text">
+											<h5>The Seven Deadly Sins: Wrath of the Gods</h5>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<div class="mix years" data-order="4">
+						{% for i in range(1,6) %}
+						<div class="row">
+							<div class="col-md-6 col-lg-12 mb-3">
+								<a href="#">
+									<div class="sidebar-news">
+										<div class="anime-alerts">
+											<div class="number-of-episodes">17/?</div>
+											<div class="views"><i class="fa fa-eye" aria-hidden="true"></i> 5895</div>
+										</div>
+										<div class="sidebar-news-text">
+											<h5>The Seven Deadly Sins: Wrath of the Gods</h5>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-12 mb-3"><h5 class="heading-with-border">New Comment</h5></div>

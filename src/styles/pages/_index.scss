@@ -1,6 +1,18 @@
 .slick {
   width: 100%;
 }
+
+.slider-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light;
+  width: 50px;
+  height: 50px;
+  border: 5px var(--bg-color) solid;
+  transform: rotate(-45deg);
+}
+
 .anime-pic {
   background-image: url(/images/recent-6.jpg);
   background-size: cover;
@@ -65,4 +77,19 @@
 
 .comment-viewes {
   font-size: 13px;
+}
+.mixitupbtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mixitupbtn label {
+  color: $light;
+  cursor: pointer;
+  padding: 3px 15px;
+  border-radius: 5px;
+}
+
+.mixitup-control-active {
+  background-color: $primary;
 }

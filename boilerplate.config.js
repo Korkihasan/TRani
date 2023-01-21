@@ -32,6 +32,7 @@ module.exports = {
       "src/scripts/app.js",
       "src/scripts/slider.js",
       "src/scripts/filter.js",
+      "src/scripts/seasonal.js",
     ],
     output: "dist/js",
     watch: ["src/scripts/**/*.js", "src/vendor/**/*.js"],

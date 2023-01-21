@@ -17,7 +17,6 @@ content %}
 					type="button"
 					role="tab"
 					aria-controls="monday"
-					aria-selected="true"
 				>
 					Monday
 				</button>
@@ -31,7 +30,6 @@ content %}
 					type="button"
 					role="tab"
 					aria-controls="tuesday"
-					aria-selected="false"
 				>
 					Tuesday
 				</button>
@@ -45,7 +43,6 @@ content %}
 					type="button"
 					role="tab"
 					aria-controls="wednesday"
-					aria-selected="false"
 				>
 					Wednesday
 				</button>
@@ -59,7 +56,6 @@ content %}
 					type="button"
 					role="tab"
 					aria-controls="thursday"
-					aria-selected="false"
 				>
 					Thursday
 				</button>
@@ -73,7 +69,6 @@ content %}
 					type="button"
 					role="tab"
 					aria-controls="friday"
-					aria-selected="false"
 				>
 					Friday
 				</button>
@@ -87,7 +82,6 @@ content %}
 					type="button"
 					role="tab"
 					aria-controls="saturday"
-					aria-selected="false"
 				>
 					Saturday
 				</button>
@@ -101,14 +95,13 @@ content %}
 					type="button"
 					role="tab"
 					aria-controls="Sunday"
-					aria-selected="false"
 				>
 					Sunday
 				</button>
 			</li>
 		</ul>
 		<div class="tab-content" id="myTabContent">
-			<div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+			<div id="monday" class="tab-pane fade" role="tabpanel" aria-labelledby="monday-tab">
 				<div class="row">
 					{% for i in range(1,6) %}
 
@@ -165,7 +158,7 @@ content %}
 					{% endfor %}
 				</div>
 			</div>
-			<div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+			<div id="tuesday" class="tab-pane fade" role="tabpanel" aria-labelledby="tuesday-tab">
 				<div class="row">
 					{% for i in range(1,8) %}
 
@@ -222,7 +215,7 @@ content %}
 					{% endfor %}
 				</div>
 			</div>
-			<div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+			<div id="wednesday" class="tab-pane fade" role="tabpanel" aria-labelledby="wednesday-tab">
 				<div class="row">
 					{% for i in range(1,6) %}
 
@@ -279,7 +272,7 @@ content %}
 					{% endfor %}
 				</div>
 			</div>
-			<div class="tab-pane fade" id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
+			<div id="thursday" class="tab-pane fade" role="tabpanel" aria-labelledby="thursday-tab">
 				<div class="row">
 					{% for i in range(1,9) %}
 
@@ -336,7 +329,7 @@ content %}
 					{% endfor %}
 				</div>
 			</div>
-			<div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+			<div id="friday" class="tab-pane fade" role="tabpanel" aria-labelledby="friday-tab">
 				<div class="row">
 					{% for i in range(1,8) %}
 
@@ -393,7 +386,7 @@ content %}
 					{% endfor %}
 				</div>
 			</div>
-			<div class="tab-pane fade" id="saturday" role="tabpanel" aria-labelledby="saturday-tab">
+			<div id="saturday" class="tab-pane fade" role="tabpanel" aria-labelledby="saturday-tab">
 				<div class="row">
 					{% for i in range(1,7) %}
 
@@ -450,7 +443,7 @@ content %}
 					{% endfor %}
 				</div>
 			</div>
-			<div class="tab-pane fade" id="Sunday" role="tabpanel" aria-labelledby="Sunday-tab">
+			<div id="Sunday" class="tab-pane fade" role="tabpanel" aria-labelledby="Sunday-tab">
 				<div class="row">
 					{% for i in range(1,5) %}
 
