@@ -5,6 +5,6 @@ $(".index-slider").slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 5000,
-  prevArrow: ".prev",
-  nextArrow: ".next",
+  prevArrow: '<i class="fa fa-chevron-left left_arrow">',
+  nextArrow: '<i class="fa fa-chevron-right right_arrow">',
 });
