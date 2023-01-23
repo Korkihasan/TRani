@@ -1,26 +1,24 @@
+.nav-hamburger {
+  display: block;
+  color: $light;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 70px;
+  @include from($tablet) {
+    display: none;
+  }
+}
+
 .header .btn {
+  padding: 0px 8px;
+  font-size: 20px;
   background-color: transparent;
   border-radius: 50%;
+  @include from($tablet) {
+  }
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  color: $dark;
-}
-
-.deneme {
-  width: 100%;
+.search-user-btn {
+  display: flex;
+  width: 70px;
 }
