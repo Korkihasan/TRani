@@ -17,7 +17,8 @@
   justify-content: center;
   align-items: center;
   background-color: #161628;
-  width: 50px;
+
+  width: 25px;
   height: 50px;
   -webkit-box-shadow: 0px 0px 0px 5px rgba(15, 14, 23, 1);
   -moz-box-shadow: 0px 0px 0px 5px rgba(15, 14, 23, 1);
@@ -29,6 +30,7 @@
   left: 0px;
   color: $light;
   @include from($tablet) {
+    width: 50px;
     left: -25px;
     transform: rotate(-45deg);
   }
@@ -46,7 +48,7 @@
   justify-content: center;
   align-items: center;
   background-color: #161628;
-  width: 50px;
+  width: 25px;
   height: 50px;
   -webkit-box-shadow: 0px 0px 0px 5px rgba(15, 14, 23, 1);
   -moz-box-shadow: 0px 0px 0px 5px rgba(15, 14, 23, 1);
@@ -59,6 +61,7 @@
 
   color: $light;
   @include from($tablet) {
+    width: 50px;
     right: -25px;
     transform: rotate(-45deg);
   }
@@ -68,6 +71,26 @@
   @include from($tablet) {
     transform: rotate(45deg);
   }
+}
+
+.slider-content {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  height: 564px;
+  padding: 0 20px 30px 15px;
+  @include from($mobile) {
+    padding: 0px 0px 70px 60px;
+  }
+}
+.slider-content-tag {
+  background-color: $light;
+  padding: 3px 10px;
+  width: fit-content;
+  color: $primary;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .anime-pic {
