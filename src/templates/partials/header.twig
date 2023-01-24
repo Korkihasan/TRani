@@ -5,14 +5,24 @@
 				<button class="btn nav-toggler">
 					<span></span>
 				</button>
-				<a href="#home" class="site-logo">logo</a>
+				<a href="index.html" class="site-logo"><img src="/images/logo.png" /></a>
 				<ul>
-					<li><a href="#">Homepage</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Seasonal Anime</a></li>
-					<li><a href="#">Our Blog</a></li>
+					<li class="toggler">
+						<button class="btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+					</li>
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="categories.html">Categories</a></li>
+					<li><a href="seasonal-anime.html">Seasonal Anime</a></li>
+					<li><a href="blog.html">Our Blog</a></li>
 				</ul>
-				<div>search--area</div>
+				<div class="search-user-btn" role="search">
+					<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSearch">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+					<a href="login.html"
+						><button class="btn"><i class="fa fa-user" aria-hidden="true"></i></button
+					></a>
+				</div>
 			</nav>
 		</div>
 	</div>

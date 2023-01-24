@@ -175,8 +175,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // define all UI variable
 const navToggler = document.querySelector(".nav-toggler");
+const toggler = document.querySelector(".toggler");
 const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a");
+const overflow = document.querySelector("body");
 
 // load all event listners
 allEventListners();
@@ -185,6 +187,8 @@ allEventListners();
 function allEventListners() {
   // toggler icon click event
   navToggler.addEventListener("click", togglerClick);
+  toggler.addEventListener("click", btntogglerClick);
+
   // nav links click event
   navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
 }
@@ -192,7 +196,14 @@ function allEventListners() {
 // togglerClick function
 function togglerClick() {
   navToggler.classList.toggle("toggler-open");
+  toggler.classList.toggle("toggler-open");
   navMenu.classList.toggle("open");
+  overflow.classList.toggle("body-overflow");
+}
+function btntogglerClick() {
+  navToggler.classList.toggle("toggler-open");
+  navMenu.classList.toggle("open");
+  overflow.classList.toggle("body-overflow");
 }
 
 // navLinkClick function
