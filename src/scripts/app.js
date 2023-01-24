@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // define all UI variable
 const navToggler = document.querySelector(".nav-toggler");
-const toggler = document.querySelector(".toggler");
+const toggler = document.querySelector(".btntoggler");
 const navMenu = document.querySelector(".site-navbar ul");
 const navLinks = document.querySelectorAll(".site-navbar a");
 const overflow = document.querySelector("body");
