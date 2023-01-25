@@ -212,3 +212,47 @@ function navLinkClick() {
     navToggler.click();
   }
 }
+
+setTimeout(function () {
+  $(".preloader-bg").fadeToggle();
+}, 1500);
+
+var day = new Date();
+var dayofweek = day.getDay();
+
+if (dayofweek == 1) {
+  document.getElementById("monday").classList.add("show");
+  document.getElementById("monday").classList.add("active");
+  document.getElementById("monday-tab").classList.add("show");
+  document.getElementById("monday-tab").classList.add("active");
+} else if (dayofweek == 2) {
+  document.getElementById("tuesday").classList.add("show");
+  document.getElementById("tuesday").classList.add("active");
+  document.getElementById("tuesday-tab").classList.add("show");
+  document.getElementById("tuesday-tab").classList.add("active");
+} else if (dayofweek == 3) {
+  document.getElementById("wednesday").classList.add("show");
+  document.getElementById("wednesday").classList.add("active");
+  document.getElementById("wednesday-tab").classList.add("show");
+  document.getElementById("wednesday-tab").classList.add("active");
+} else if (dayofweek == 4) {
+  document.getElementById("thursday").classList.add("show");
+  document.getElementById("thursday").classList.add("active");
+  document.getElementById("thursday-tab").classList.add("show");
+  document.getElementById("thursday-tab").classList.add("active");
+} else if (dayofweek == 5) {
+  document.getElementById("friday").classList.add("show");
+  document.getElementById("friday").classList.add("active");
+  document.getElementById("friday-tab").classList.add("show");
+  document.getElementById("friday-tab").classList.add("active");
+} else if (dayofweek == 6) {
+  document.getElementById("saturday").classList.add("show");
+  document.getElementById("saturday").classList.add("active");
+  document.getElementById("saturday-tab").classList.add("show");
+  document.getElementById("saturday-tab").classList.add("active");
+} else {
+  document.getElementById("Sunday").classList.add("show");
+  document.getElementById("Sunday").classList.add("active");
+  document.getElementById("Sunday-tab").classList.add("show");
+  document.getElementById("Sunday-tab").classList.add("active");
+}

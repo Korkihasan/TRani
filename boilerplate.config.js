@@ -33,7 +33,6 @@ module.exports = {
       "src/scripts/slider.js",
       "src/scripts/filter.js",
       "src/scripts/seasonal.js",
-      "src/scripts/navbar.js",
     ],
     output: "dist/js",
     watch: ["src/scripts/**/*.js", "src/vendor/**/*.js"],
