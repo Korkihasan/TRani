@@ -1,5 +1,4 @@
-var mixer = mixitup(".mixup");
+var mixitup = document.getElementById("mixitup");
 
-mixer.filter(".day").then(function (state) {
-  console.log(state.totalShow === containerEl.querySelectorAll(".day").length); // true
-});
+if (mixitup) {
+}
