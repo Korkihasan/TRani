@@ -37,7 +37,3 @@ function navLinkClick() {
     navToggler.click();
   }
 }
-
-setTimeout(function () {
-  $(".preloader-bg").fadeToggle();
-}, 1500);

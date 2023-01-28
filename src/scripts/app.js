@@ -172,3 +172,7 @@ var grafix = {
 document.addEventListener("DOMContentLoaded", function () {
   grafix.init();
 });
+
+setTimeout(function () {
+  $(".preloader-bg").fadeToggle();
+}, 1500);

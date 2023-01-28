@@ -50,4 +50,4 @@ Geliştirme aşamasında herhangi bir hata mı aldınız? Yeni bir özellik ekle
 
 ## Telif Hakkı & Lisans
 
-Telif hakları [Grafix Kreatif Yazılım Atölyesi](http://grafix.com.tr) ve [Hasan Korkmaz](https://github.com/Korkihasan)'e aittir. Proje kodları [MIT lisansı](https://github.com/grafixcw/masirdoor/blob/master/LICENSE) altında sunulmuştur.
+Telif hakları [Grafix Kreatif Yazılım Atölyesi](http://grafix.com.tr) ve [Hasan Korkmaz](https://github.com/Korkihasan)'e aittir. Proje kodları [MIT lisansı](https://github.com/grafixcw/trani/blob/master/LICENSE) altında sunulmuştur.

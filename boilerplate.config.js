@@ -6,13 +6,18 @@ module.exports = {
   clean: ["dist/"],
   content: "./boilerplate.content.json",
   fonts: {
-    input: ["src/iconfont/output/fonts/**/*", "src/fonts/**/*", "src/vendor/font-awesome/fonts/**/*"],
+    input: [
+      "src/iconfont/output/fonts/**/*",
+      "src/fonts/**/*",
+      "src/vendor/font-awesome/fonts/**/*",
+      "src/vendor/slick/fonts/**/*",
+    ],
     output: "dist/fonts/",
   },
   images: {
-    input: "src/images/**/*",
+    input: ["src/images/**/*", "src/vendor/slick/ajax-loader.gif"],
     output: "dist/images",
-    watch: "src/images/**/*",
+    watch: ["src/images/**/*", "src/vendor/slick/ajax-loader.gif"],
   },
   uploads: {
     input: "src/uploads/**/*",
@@ -24,7 +29,6 @@ module.exports = {
     input: [
       "src/vendor/bootstrap/js/bootstrap.bundle.min.js",
       "src/vendor/bootnavbar/js/bootnavbar.js",
-      "node_modules/swiper/swiper-bundle.min.js",
       "src/vendor/magnific-popup/js/jquery.magnific-popup.min.js",
       "src/vendor/slick/slick.min.js",
       "src/vendor/mixitub/mixitup.min.js",
