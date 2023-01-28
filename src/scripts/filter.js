@@ -1,4 +1,9 @@
-var mixitup = document.getElementById("mixitup");
+var mixituper = document.getElementById("mixitup");
 
-if (mixitup) {
+if (mixituper) {
+  var mixer = mixitup(".mixitup-container", {
+    load: {
+      filter: ".day",
+    },
+  });
 }
